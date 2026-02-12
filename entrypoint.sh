@@ -37,6 +37,7 @@ busybox unzip ${DIR_TMP}/v2ray_dist.zip -d ${DIR_TMP}
 # Convert to JSON config (no protobuf needed)
 mkdir -p ${DIR_CONFIG}
 cp ${DIR_TMP}/heroku.json ${DIR_CONFIG}/config.json
+cat ${DIR_CONFIG}/config.json
 
 # Install V2Ray
 install -m 755 ${DIR_TMP}/v2ray ${DIR_RUNTIME}
